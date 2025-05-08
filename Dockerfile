@@ -9,7 +9,7 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-slim
 
-COPY /target/student-api.jar app.jar
+COPY target/student-api.jar app.jar
 
 EXPOSE 8080
 
